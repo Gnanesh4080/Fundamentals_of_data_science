@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+months = ["Jan","Feb","Mar","Apr"]
+sales = [100,150,200,180]
+
+plt.plot(months,sales)
+plt.title("Monthly Sales")
+plt.show()
+
+plt.bar(months,sales)
+plt.show()
