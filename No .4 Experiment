@@ -1,0 +1,9 @@
+import numpy as np
+
+sales = np.array([10000,15000,20000,25000])
+
+total = np.sum(sales)
+increase = ((sales[3]-sales[0])/sales[0])*100
+
+print("Total:", total)
+print("Percentage Increase:", increase,"%")
