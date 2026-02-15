@@ -1,0 +1,12 @@
+prices = [50,30,20]
+qty = [2,3,1]
+
+discount = 10
+tax = 5
+
+subtotal = sum(p*q for p,q in zip(prices,qty))
+discount_amt = subtotal*(discount/100)
+tax_amt = (subtotal-discount_amt)*(tax/100)
+
+total = subtotal - discount_amt + tax_amt
+print("Total Bill:", total)
