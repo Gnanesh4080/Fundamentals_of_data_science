@@ -1,0 +1,10 @@
+import numpy as np
+
+# bedrooms, sqft, price
+data = np.array([[3,1200,200000],
+                 [5,2000,500000],
+                 [4,1500,300000],
+                 [6,2500,600000]])
+
+filtered = data[data[:,0] > 4]
+print("Average Price:", np.mean(filtered[:,2]))
