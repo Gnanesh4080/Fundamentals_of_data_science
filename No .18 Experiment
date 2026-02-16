@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {"Age":[25,30,35,40,28],
+        "Fat":[20,25,30,28,22]}
+
+df = pd.DataFrame(data)
+
+print(df.mean())
+print(df.median())
+print(df.std())
+
+df.boxplot()
+plt.show()
