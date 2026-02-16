@@ -1,0 +1,8 @@
+import pandas as pd
+from scipy import stats
+
+df = pd.read_csv("customer_reviews.csv")
+
+mean = df["rating"].mean()
+ci = stats.t.interval(0.95,len(df)-1,loc=mean,scale=stats.sem(df["rating"]))
+print(ci)
