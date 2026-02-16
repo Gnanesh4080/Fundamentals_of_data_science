@@ -1,0 +1,6 @@
+import pandas as pd
+from collections import Counter
+
+reviews = pd.DataFrame({"Review":["Good product","Very good quality","Bad product"]})
+text = " ".join(reviews["Review"]).lower().split()
+print(Counter(text))
