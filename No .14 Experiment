@@ -1,0 +1,4 @@
+import pandas as pd
+
+df = pd.DataFrame({"Age":[20,22,20,25,22,30]})
+print(df["Age"].value_counts())
