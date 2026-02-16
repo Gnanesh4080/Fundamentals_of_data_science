@@ -1,0 +1,7 @@
+from scipy import stats
+
+A = [10,12,11,13,12]
+B = [14,15,16,14,15]
+
+t,p = stats.ttest_ind(A,B)
+print("p-value:",p)
