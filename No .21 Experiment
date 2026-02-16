@@ -1,0 +1,10 @@
+import pandas as pd
+import numpy as np
+from scipy import stats
+
+df = pd.read_csv("rare_elements.csv")
+sample = df.sample(10)
+
+mean = sample.mean()[0]
+ci = stats.t.interval(0.95,len(sample)-1,loc=mean,scale=stats.sem(sample))
+print(ci)
